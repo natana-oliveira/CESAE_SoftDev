@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/general.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>SurfSway</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                class="logo"
+                src="/images/logo_SurfSway_200px.png"
+                alt="Surf Sway logo"
+            /></a>
+            <!-- HAMBURGER BUTTON RESPONSIVE -->
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SIDEBAR -->
+            <div
+              class="sidebar offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <!-- SIDEBAR HEADER -->
+              <div class="offcanvas-header">
+                <a class="navbar-brand" href="index.html"
+                  ><img
+                    class="logo"
+                    src="/images/logo_SurfSway_200px.png"
+                    alt="Surf Sway logo"
+                /></a>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white shadow-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- SIDEBAR BODY -->
+              <div class="offcanvas-body d-flex flex-column p-4">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item mx-4">
+                    <!-- mx-4 altera distancia "margin" entre os links -->
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="community.html">COMMUNITY</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="img-contactpage">
+          <div class="hero-text-box">
+            <h1 class="heading-primary center">Say Aloha!</h1>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="album-blue py-5">
+        <!-- FORM -->
+        <div class="container-form">
+          <h2 class="heading-secondary">Contact Us</h2>
+
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label"
+                >First name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label"
+                >Last name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom02"
+                required
+              />
+              <div class="valid-feedback"></div>
+            </div>
+            <div class="col-md-12">
+              <label for="exampleFormControlInputEmail" class="form-label"
+                >Email <span class="required">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInputEmail"
+                required
+              />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Incorrect email address</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationCustom03" />
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom04" class="form-label">Country</label>
+              <select class="form-select" id="validationCustom04">
+                <option selected disabled value="">Select Country</option>
+                <option>Afghanistan</option>
+                <option>Albania</option>
+                <option>Algeria</option>
+                <option>Andorra</option>
+                <option>Angola</option>
+                <option>Antigua and Barbuda</option>
+                <option>Argentina</option>
+                <option>Armenia</option>
+                <option>Australia</option>
+                <option>Austria</option>
+                <option>Azerbaijan</option>
+                <option>Bahamas</option>
+                <option>Bahrain</option>
+                <option>Bangladesh</option>
+                <option>Barbados</option>
+                <option>Belarus</option>
+                <option>Belgium</option>
+                <option>Belize</option>
+                <option>Benin</option>
+                <option>Bhutan</option>
+                <option>Bolivia</option>
+                <option>Bosnia and Herzegovina</option>
+                <option>Botswana</option>
+                <option>Brazil</option>
+                <option>Brunei</option>
+                <option>Bulgaria</option>
+                <option>Burkina Faso</option>
+                <option>Burundi</option>
+                <option>Cabo Verde</option>
+                <option>Cambodia</option>
+                <option>Cameroon</option>
+                <option>Canada</option>
+                <option>Central African Republic</option>
+                <option>Chile</option>
+                <option>China</option>
+                <option>Colombia</option>
+                <option>Costa Rica</option>
+                <option>Croatia</option>
+                <option>Cuba</option>
+                <option>Cyprus</option>
+                <option>Pakistan</option>
+                <option>Palau</option>
+                <option>Palestine State</option>
+                <option>Panama</option>
+                <option>Papua New Guinea</option>
+                <option>Paraguay</option>
+                <option>Peru</option>
+                <option>Philippines</option>
+                <option>Poland</option>
+                <option>Portugal</option>
+                <option>Qatar</option>
+                <option>Romania</option>
+                <option>Russia</option>
+                <option>Rwanda</option>
+                <option>Samoa</option>
+                <option>Sao Tome and Principe</option>
+                <option>Saudi Arabia</option>
+                <option>Senegal</option>
+                <option>Serbia</option>
+                <option>Seychelles</option>
+                <option>Sierra Leone</option>
+                <option>Singapore</option>
+                <option>Slovakia</option>
+                <option>Slovenia</option>
+                <option>Tajikistan</option>
+                <option>Tanzania</option>
+                <option>Thailand</option>
+                <option>Timor-Leste</option>
+                <option>Togo</option>
+                <option>Tonga</option>
+                <option>Trinidad and Tobago</option>
+                <option>Tunisia</option>
+                <option>Turkey</option>
+                <option>Turkmenistan</option>
+                <option>Tuvalu</option>
+                <option>Uganda</option>
+                <option>Ukraine</option>
+                <option>United Arab Emirates</option>
+                <option>United Kingdom</option>
+                <option>United States of America</option>
+                <option>Uruguay</option>
+                <option>Uzbekistan</option>
+                <option>Vanuatu</option>
+                <option>Venezuela</option>
+                <option>Vietnam</option>
+                <option>Yemen</option>
+                <option>Zambia</option>
+                <option>Zimbabwe</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label for="exampleFormControlSubject" class="form-label"
+                >Subject</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlSubject"
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message <span class="required">*</span></label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  I agree to the
+                  <a class="link" href="#">Terms and Conditions</a> and
+                  <a class="link" href="#">Privacy Policy</a>.
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button
+                class="btn btn-unstyled btn--full"
+                id="send"
+                onclick="message()"
+              >
+                Submit
+              </button>
+            </div>
+
+            <div class="message">
+              <div class="success" id="success">
+                Your message successfully sent!
+              </div>
+              <div class="danger" id="danger">Feilds Can't be Empty!</div>
+            </div>
+          </form>
+
+          <!-- Optional JavaScript -->
+          <!-- Popper.js first, then Bootstrap JS -->
+          <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous"
+          ></script>
+
+          <script>
+            var forms = document.querySelectorAll(".needs-validation");
+
+            Array.prototype.slice.call(forms).forEach(function (form) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  console.log("Submit event detected");
+                  if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    console.log("Form is invalid");
+                  }
+
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          </script>
+        </div>
+      </div>
+
+      <div class="album-beige container-cards-contact">
+        <!-- CARDS -->
+        <div class="row row-card-contact">
+          <!-- CARD 1 Volunteer -->
+          <div class="col-sm-6">
+            <div class="card-contact">
+              <img
+                class="round-img img-fluid"
+                src="/images/roundImg_Volunteer.png"
+                alt="Two girls holding your hands and surfing the same board"
+              />
+              <div class="volunteer-text-box">
+                <h3 class="heading-tertiary">Become a Volunteer</h3>
+                <p class="img-description">
+                  If you're passionate about bringing surf into the lives of
+                  others, we'd love to have you as a volunteer.
+                </p>
+              </div>
+              <a class="btn btn--full" type="submit" href="error.html"
+                >Apply Here</a
+              >
+            </div>
+          </div>
+          <!-- CARD 2 Partner -->
+          <div class="col-sm-6">
+            <div class="card-contact">
+              <img
+                class="round-img img-fluid"
+                src="/images/roundImg_Partner.png"
+                alt="Female surfer being photographed"
+              />
+              <div class="volunteer-text-box">
+                <h3 class="heading-tertiary">Partner With Us</h3>
+                <p class="img-description">
+                  If you're curious about our business, partnerships, or other
+                  marketing opportunities, this is the place for you.
+                </p>
+              </div>
+              <a class="btn btn--full" type="submit" href="error.html">
+                Email Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li>
+            <a target="_blank" class="icon" href="https://www.instagram.com/"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="icon" href="https://www.facebook.com/"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="icon" href="https://www.youtube.com/"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <ul class="footer-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="community.html">COMMUNITY</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <hr />
+        <p class="copyright">
+          <span>&copy</span>2023 Natana Oliveira | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

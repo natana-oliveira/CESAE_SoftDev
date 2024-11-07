@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/general.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>SurfSway</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                class="logo"
+                src="/images/logo_SurfSway_200px.png"
+                alt="Surf Sway logo"
+            /></a>
+            <!-- HAMBURGER BUTTON RESPONSIVE -->
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SIDEBAR -->
+            <div
+              class="sidebar offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <!-- SIDEBAR HEADER -->
+              <div class="offcanvas-header">
+                <a class="navbar-brand" href="index.html"
+                  ><img
+                    class="logo"
+                    src="/images/logo_SurfSway_200px.png"
+                    alt="Surf Sway logo"
+                /></a>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white shadow-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- SIDEBAR BODY -->
+              <div class="offcanvas-body d-flex flex-column p-4">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item mx-4">
+                    <!-- mx-4 altera distancia "margin" entre os links -->
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="community.html">COMMUNITY</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" href="blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="img-blogpage">
+          <div class="hero-text-box">
+            <h1 class="heading-primary center">Mahalo!</h1>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="blog">
+        <div class="album-beige">
+          <div class="container-ourVision" style="padding-bottom: 150px">
+            <div class="col-lg-12 mb-5 mb-lg-0">
+              <div class="row">
+                <!-- /***************** CARD 1 ********************/ -->
+                <div class="col-md-8 mb-4 col-blog-gr">
+                  <div class="card card-blog-section">
+                    <a href="error.html">
+                      <div class="card-image">
+                        <div class="post-info">
+                          <span class="text-uppercase">13 NOV 2023</span>
+                        </div>
+                        <img
+                          src="/images/News 1.jpg"
+                          alt="Post Thumbnail"
+                          class="w-100 fixed-height-image"
+                          style="max-height: 400px"
+                        />
+                      </div>
+                    </a>
+                    <div class="card-body">
+                      <ul class="post-meta">
+                        <li>
+                          <a href="error.html">Guest Blogs</a>
+                        </li>
+                        <li><a href="error.html">Women</a></li>
+                      </ul>
+                      <h3 class="heading-tertiary">
+                        <a class="post-title" href="error.html"
+                          >Overcoming imposter syndrome in the surf</a
+                        >
+                      </h3>
+                      <p class="card-text">by Emma Bukowski</p>
+                      <div class="content">
+                        <a class="read-more-btn" href="error.html">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /***************** CARD 2 ********************/ -->
+                <div class="col-md-4 mb-4 col-blog-gr">
+                  <div class="card card-blog-section">
+                    <a href="error.html">
+                      <div class="card-image">
+                        <div class="post-info">
+                          <span class="text-uppercase">26 OUT 2023</span>
+                        </div>
+                        <img
+                          src="/images/News 2.jpg"
+                          alt="Post Thumbnail"
+                          class="w-100 fixed-height-image"
+                          style="max-height: 400px"
+                        />
+                      </div>
+                    </a>
+                    <div class="card-body">
+                      <ul class="post-meta">
+                        <li><a href="error.html">People</a></li>
+                        <li><a href="error.html">Surf Culture</a></li>
+                      </ul>
+                      <h3 class="heading-tertiary">
+                        <a class="post-title" href="error.html">Wave Woman </a>
+                      </h3>
+                      <p class="card-text">by Kim Feldmann</p>
+                      <div class="content">
+                        <a class="read-more-btn" href="error.html">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /***************** CARD 3 ********************/ -->
+                <div class="col-md-4 mb-4 col-blog">
+                  <article class="card card-blog-section">
+                    <a href="error.html">
+                      <div class="card-image">
+                        <div class="post-info">
+                          <span class="text-uppercase">26 AUG 2023</span>
+                        </div>
+                        <img
+                          src="/images/News 3.jpg"
+                          alt="Post Thumbnail"
+                          class="w-100"
+                        />
+                      </div>
+                    </a>
+                    <div class="card-body">
+                      <ul class="post-meta">
+                        <li><a href="error.html">Science & skepticism</a></li>
+                      </ul>
+                      <h3 class="heading-tertiary">
+                        <a class="post-title" href="error.html"
+                          >Paddle, Paddle, Paddle!
+                        </a>
+                      </h3>
+                      <p class="card-text">by Kim Feldmann</p>
+                      <div class="content">
+                        <a class="read-more-btn" href="error.html">Read More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <!-- /***************** CARD 4 ********************/ -->
+                <div class="col-md-4 mb-4 col-blog">
+                  <article class="card card-blog-section">
+                    <a href="error.html">
+                      <div class="card-image">
+                        <div class="post-info">
+                          <span class="text-uppercase">11 AUG 2023</span>
+                        </div>
+                        <img src="/images/News 4.webp" alt="" class="w-100" />
+                      </div>
+                    </a>
+                    <div class="card-body">
+                      <ul class="post-meta">
+                        <li><a href="error.html">Women</a></li>
+                        <li><a href="error.html">Surf Industry</a></li>
+                      </ul>
+                      <h3 class="heading-tertiary">
+                        <a class="post-title" href="error.html">She shapes</a>
+                      </h3>
+                      <p class="card-text">by Mike Bresen</p>
+                      <div class="content">
+                        <a class="read-more-btn" href="error.html">Read More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <!-- /***************** CARD 5 ********************/ -->
+                <div class="col-md-4 mb-4 col-blog">
+                  <article class="card card-blog-section">
+                    <a href="error.html">
+                      <div class="card-image">
+                        <div class="post-info">
+                          <span class="text-uppercase">07 Jul 2023</span>
+                        </div>
+                        <img
+                          src="/images/News 5.jpg"
+                          alt="Post Thumbnail"
+                          class="w-100"
+                        />
+                      </div>
+                    </a>
+                    <div class="card-body">
+                      <ul class="post-meta">
+                        <li>
+                          <a href="error.html">Photography</a>
+                        </li>
+                        <li>
+                          <a href="error.html">Interviews</a>
+                        </li>
+                      </ul>
+                      <h3 class="heading-tertiary">
+                        <a class="post-title" href="error.html"
+                          >The buoyant surf photography of Ana Catarina</a
+                        >
+                      </h3>
+                      <p class="card-text">by Kim Feldmann</p>
+                      <div class="content">
+                        <a class="read-more-btn" href="error.html">Read More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <!-- /***************** CARD 6 ********************/ -->
+                <div class="col-md-4 mb-4 col-blog">
+                  <article class="card card-blog-section">
+                    <a href="error.html">
+                      <div class="card-image">
+                        <div class="post-info">
+                          <span class="text-uppercase">30 May 2023</span>
+                        </div>
+                        <img
+                          src="/images/News 6.jpg"
+                          alt="Post Thumbnail"
+                          class="w-100"
+                        />
+                      </div>
+                    </a>
+                    <div class="card-body">
+                      <ul class="post-meta">
+                        <li>
+                          <a href="error.html">Surf Culture</a>
+                        </li>
+                      </ul>
+                      <h3 class="heading-tertiary">
+                        <a class="post-title" href="error.html">First steps</a>
+                      </h3>
+                      <p class="card-text">by Kim Feldmann</p>
+                      <div class="content">
+                        <a class="read-more-btn" href="error.html">Read More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <!-- /***************** CARD 7 ********************/ -->
+                <div class="col-md-4 mb-4 col-blog">
+                  <article class="card card-blog-section">
+                    <a href="error.html">
+                      <div class="card-image">
+                        <div class="post-info">
+                          <span class="text-uppercase">29 May 2023</span>
+                        </div>
+                        <img
+                          src="/images/News 7.png"
+                          alt="Post Thumbnail"
+                          class="w-100"
+                        />
+                      </div>
+                    </a>
+                    <div class="card-body">
+                      <ul class="post-meta">
+                        <li><a href="error.html">Community Projects</a></li>
+                        <li><a href="error.html">Women</a></li>
+                      </ul>
+                      <h3 class="heading-tertiary">
+                        <a class="post-title" href="error.html"
+                          >Creating safe spaces for women to enjoy the ocean and
+                          surfing</a
+                        >
+                      </h3>
+                      <p class="card-text">
+                        by Amanda Prifti, Lara Coldwood, Lizzie Goldsack
+                      </p>
+                      <div class="content">
+                        <a class="read-more-btn" href="error.html">Read More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <!-- /***************** CARD 8 ********************/ -->
+                <div class="col-md-4 mb-4 col-blog">
+                  <article class="card card-blog-section">
+                    <a href="error.html">
+                      <div class="card-image">
+                        <div class="post-info">
+                          <span class="text-uppercase">28 May 2023</span>
+                        </div>
+                        <img
+                          src="/images/News 8.jpg"
+                          alt="Post Thumbnail"
+                          class="w-100"
+                        />
+                      </div>
+                    </a>
+                    <div class="card-body">
+                      <ul class="post-meta">
+                        <li>
+                          <a href="error.html">Surf Culture</a>
+                        </li>
+                        <li><a href="error.html">Women</a></li>
+                        <li><a href="error.html">Interviews</a></li>
+                      </ul>
+                      <h3 class="heading-tertiary">
+                        <a class="post-title" href="error.html">
+                          I’ll catch this wave because I want to
+                        </a>
+                      </h3>
+                      <p class="card-text">by Kim Feldmann</p>
+                      <div class="content">
+                        <a class="read-more-btn" href="error.html">Read More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <!-- /*************** Paginação  ******************/ -->
+                <div class="col-12">
+                  <div class="row" style="margin: 40px">
+                    <div class="col-12">
+                      <nav class="mt-4">
+                        <!-- pagination -->
+                        <nav class="mb-md-50">
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                              <a
+                                class="page-link"
+                                style="border-radius: 50px"
+                                href=""
+                                aria-label="Pagination Arrow"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="26"
+                                  height="26"
+                                  fill="currentColor"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                            <li class="page-item active">
+                              <a href="error.html" class="page-link"> 1 </a>
+                            </li>
+                            <li class="page-item">
+                              <a href="error.html" class="page-link"> 2 </a>
+                            </li>
+                            <li class="page-item">
+                              <a
+                                class="page-link"
+                                style="border-radius: 50px"
+                                href="error.html"
+                                aria-label="Pagination Arrow"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="26"
+                                  height="26"
+                                  fill="currentColor"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li>
+            <a target="_blank" class="icon" href="https://www.instagram.com/"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="icon" href="https://www.facebook.com/"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="icon" href="https://www.youtube.com/"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <ul class="footer-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="community.html">COMMUNITY</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <hr />
+        <p class="copyright">
+          <span>&copy</span>2023 Natana Oliveira | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

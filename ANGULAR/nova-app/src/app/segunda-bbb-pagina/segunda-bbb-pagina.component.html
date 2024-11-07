@@ -1,0 +1,43 @@
+{{ arr }}
+
+<ul>
+  <li *ngFor="let item of arr">
+    {{ item }}
+  </li>
+</ul>
+
+<div>
+  <article *ngFor="let item of arr">
+    {{ item }}
+    <!-- ... -->
+  </article>
+</div>
+
+<ul>
+  <li *ngFor="let item of arr; index as i">
+    {{ item }} ({{ i }})
+  </li>
+</ul>
+
+<ul>
+  <ng-template ngFor let-item [ngForOf]="arr" let-i="index">
+    <li>{{ item }} ({{ i }})</li>
+  </ng-template>
+</ul>
+
+<ul>
+  <li *ngFor="let item of arr; index as i; first as ePrimeiro">
+    {{ item }} ({{ i }})
+    <b *ngIf="ePrimeiro">PRIMEIRO</b>
+  </li>
+</ul>
+
+<!-- ¡¡ versão 17.0 e a cima !! -->
+<h3><small><i>a</i></small>for</h3>
+<ul>
+  @for (item of arr; track $index) {
+  <li>{{ item }} ({{ $index }})</li>
+  } @empty {
+  <li>A lista esta vazia!</li>
+  }
+</ul>

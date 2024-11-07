@@ -1,0 +1,156 @@
+
+/* __________NAV BAR__________ */
+
+.navbar-brand {
+  padding: 20px;
+}
+
+.nav-item {
+  padding-left: 35px;
+}
+
+.nav-item a {
+  padding-left: 25px;
+  color: white;
+}
+
+.nav-item a:hover {
+  color: rgb(189, 4, 4);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.navbar-nav {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-left: 725px;
+}
+
+.form-control {
+  background-color: black;
+}
+
+/* __________CARROSSEL__________ */
+
+.carousel-caption {
+  /* padding-bottom: 685px; */
+  padding-right: 850px;
+  text-align: left;
+  line-height: 1.8;
+  min-width: 300px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.row-2 {
+  padding-top: 10px;
+}
+
+.card-img-overlay {
+  background: linear-gradient(190.99deg, #000000 0, transparent 99.04%);
+}
+
+.blog {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+
+
+
+/* __________ACCORDION__________ */
+
+
+.accordion-body{
+  align-items: center;
+}
+
+.accordion-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.accordion-button {
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+/* __________FOOTER__________ */
+
+
+.card-body {
+  background-color: #000000;
+  color: white;
+  padding: 45px;
+}
+
+.card-title {
+  padding-top: 45px;
+}
+
+.card-col {
+  float: left;
+  width: 25%;
+  padding: 30px;
+}
+
+.btn-primary {
+  background-color: rgb(189, 4, 4);
+  border-color: rgb(189, 4, 4);
+  }
+
+.btn-primary:hover{
+ background-color: rgb(99, 4, 4);
+ border-color: rgb(99, 4, 4);
+} 
+
+.links{
+  text-align: center;
+  padding-top: 55px;
+}
+
+.font-footer {
+line-height: 3;
+color: white;
+text-decoration: none;
+}
+
+.font-footer:hover{
+    color: rgb(189, 4, 4);
+    text-decoration: dotted;   
+  }
+
+.bi{
+  color: white;
+}
+
+.bi:hover{
+  color: rgb(189, 4, 4);
+}
+
+
+.follow{
+text-align: center;
+padding-top: 65px;
+}
+
+.follow a{
+ padding: 10px;
+}
+
+.card-footer{
+  background-color: #000000;
+  color: rgb(134, 134, 134);
+  text-align: center;
+  padding: 10px;
+}

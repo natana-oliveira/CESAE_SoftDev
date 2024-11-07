@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!-- NAVBAR -->
+  <nav
+    class="navbar navbar-expand-lg bg-transparent"
+    style="background-color: white"
+  >
+    <div class="container-fluid">
+      <a routerLink="/" routerLinkActive="active"
+        ><img src="assets/log.png" alt="" style="width: 10%"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li> -->
+          <li
+            class="nav-item"
+            style="padding-right: 65px; font-weight: 600; font-size: 22px"
+          >
+            <a class="nav-link" style="color: #df4f2a" href="#">Animais</a>
+          </li>
+          <li
+            class="nav-item"
+            style="padding-right: 65px; font-weight: 600; font-size: 22px"
+          >
+            <a class="nav-link" style="color: #df4f2a" href="#">Tutores</a>
+          </li>
+          <li
+            class="nav-item"
+            style="padding-right: 65px; font-weight: 600; font-size: 22px"
+          >
+            <a class="nav-link" style="color: #df4f2a" href="#">Marcações</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success"
+            type="submit"
+            style="background-color: #df4f2a; border: none"
+          >
+            <i class="bi bi-search" style="color: white; font-size: 20px"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+      <div class="Marcacoes" style="margin-bottom: 50px">
+        <div>
+          <app-marcacoes-lista />
+          <!-- chama a lista de marcações para a home -->
+          <br />
+        </div>
+        <div>
+          <button
+            [routerLink]="['/nova-marcacao']"
+            type="button"
+            style="
+              background-color: #df4f2a;
+              border: none;
+              color: white;
+              padding: 10px;
+              border-radius: 8px;
+            "
+          >
+            Nova marcação
+          </button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="Animais" style="margin-bottom: 50px">
+        <div>
+          <app-animais-lista />
+          <!-- chama a lista de animais para a home -->
+        </div>
+        <br />
+        <div>
+          <button
+            [routerLink]="['/novo-animal']"
+            type="button"
+            style="
+              background-color: #df4f2a;
+              border: none;
+              color: white;
+              padding: 10px;
+              border-radius: 8px;
+            "
+          >
+            Novo animal
+          </button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="Tutores" style="margin-bottom: 50px">
+        <div>
+          <app-tutores-lista />
+          <!-- chama a lista de tutores para a home -->
+        </div>
+        <br />
+        <div>
+          <button
+            [routerLink]="['/novo-tutor']"
+            type="button"
+            style="
+              background-color: #df4f2a;
+              border: none;
+              color: white;
+              padding: 10px;
+              border-radius: 8px;
+            "
+          >
+            Novo tutor
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

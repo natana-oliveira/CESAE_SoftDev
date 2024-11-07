@@ -1,0 +1,135 @@
+Aluna:Natana Oliveira
+
+
+-----------------------
+----- Exercicio 4 -----
+-----------------------
+
+a) 
+CREATE VIEW 4a AS
+SELECT nome, email, contacto
+FROM cliente
+where email LIKE '%gmail%' and (contacto like '91%' OR contacto like '96%');
+
+b) 
+CREATE VIEW 4b as
+SELECT e.id_emprestimo, e.id_cliente, e.id_livro,
+CURRENT_DATE() - e.data_emprestimo AS Dias
+FROM emprestimo as e
+WHERE e.data_devolucao IS NULL;
+
+c) 
+CREATE VIEW 4c as
+SELECT YEAR(data_emprestimo) AS ano,
+COUNT(*) AS total_emprestimos
+FROM emprestimo
+GROUP BY YEAR(data_emprestimo);
+
+d) 
+CREATE VIEW 4d AS
+SELECT e.nome_editora,
+COUNT(l.id_livro) AS quantidade_livros
+FROM editora as e
+JOIN livro as l ON e.id_editora = l.id_editora
+GROUP BY e.nome_editora
+HAVING COUNT(l.id_livro) > 3;
+
+e) 
+CREATE VIEW 4e AS
+SELECT genero.genero, COUNT(livro.id_livro) AS quantidade_livros
+FROM genero 
+JOIN livro on genero.id_genero = livro.id_genero
+GROUP by genero.genero;
+
+f) 
+CREATE view 4f AS
+SELECT e.nome_editora, g.genero
+FROM editora as e
+JOIN livro as l ON e.id_editora = l.id_editora
+JOIN genero as g ON l.id_genero = g.id_genero;
+
+g) 
+CREATE view 4g AS
+SELECT a.nome_autor,
+COUNT(e.id_emprestimo) AS total_emprestimos
+FROM autor as a
+JOIN livro as l ON l.id_autor = a.id_autor
+JOIN emprestimo as e ON e.id_livro = e.id_livro
+JOIN cliente as c ON c.id_cliente = e.id_cliente
+WHERE a.pais != 'EUA'
+GROUP BY a.nome_autor
+ORDER BY total_emprestimos DESC
+LIMIT 3;
+
+h) 
+CREATE view  4h as
+SELECT l.titulo, c.nome, c.email, e.data_emprestimo
+FROM livro as l
+JOIN emprestimo as e ON e.id_livro = l.id_livro
+JOIN cliente as c ON c.id_cliente = e.id_cliente
+WHERE e.data_devolucao < '2021-01-01'
+ORDER BY e.data_emprestimo ASC;
+
+
+-----------------------
+----- Exercicio 5 -----
+-----------------------
+
+a) 
+DELIMITER //
+CREATE PROCEDURE clientesEmail
+(IN dominio VARCHAR(50))
+BEGIN
+SELECT nome, email
+FROM cliente
+WHERE email LIKE CONCAT('%@', dominio);
+END //
+DELIMITER;
+
+b)
+DELIMITER //
+CREATE PROCEDURE livroAutorPais
+(IN a_nome VARCHAR(100),
+ IN a_pais VARCHAR(100))
+BEGIN
+SELECT l.titulo
+FROM livro as l
+JOIN autor as a ON l.id_autor = a.id_autor
+WHERE a.nome_autor = a_nome
+AND a.pais = a_pais;
+END //
+DELIMITER;
+
+c)
+DELIMITER //
+CREATE PROCEDURE numLivrosPorGenero
+(IN genero VARCHAR(100))
+BEGIN
+DECLARE total_livros INT;
+SELECT 
+COUNT(*) INTO total_livros
+FROM livro as l
+JOIN genero as g ON l.id_genero = g.id_genero
+WHERE g.genero = genero;
+SELECT total_livros AS 'Numero de Livros do Genero';
+END //
+DELIMITER ;
+
+d)
+DELIMITER //
+CREATE PROCEDURE livrosPorAutor(
+IN nomeAutor VARCHAR(50))
+BEGIN
+SELECT l.titulo
+from livro as l
+JOIN autor as a ON l.id_autor = a.id_autor
+LEFT JOIN emprestimo as e ON l.id_livro = e.id_livro
+WHERE a.nome_autor = nomeAutor
+AND e.id_emprestimo IS NULL;
+END //
+DELIMITER ;
+
+
+
+
+ 

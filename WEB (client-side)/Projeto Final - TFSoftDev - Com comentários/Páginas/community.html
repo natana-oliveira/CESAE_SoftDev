@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/general.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>SurfSway</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                class="logo"
+                src="/images/logo_SurfSway_200px.png"
+                alt="Surf Sway logo"
+            /></a>
+            <!-- HAMBURGER BUTTON RESPONSIVE -->
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SIDEBAR -->
+            <div
+              class="sidebar offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <!-- SIDEBAR HEADER -->
+              <div class="offcanvas-header">
+                <a class="navbar-brand" href="index.html"
+                  ><img
+                    class="logo"
+                    src="/images/logo_SurfSway_200px.png"
+                    alt="Surf Sway logo"
+                /></a>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white shadow-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- SIDEBAR BODY -->
+              <div class="offcanvas-body d-flex flex-column p-4">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item mx-4">
+                    <!-- mx-4 altera distancia "margin" entre os links -->
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" href="community.html"
+                      >COMMUNITY</a
+                    >
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="img-communitypage">
+          <div class="hero-text-box">
+            <h1 class="heading-primary center">Meet our Ohana!</h1>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="album-blue community">
+        <div class="container-community">
+          <div class="row row-exist">
+            <div class="col-md-8 col-exist">
+              <h2 class="heading-secondary" style="color: white">
+                Buenos dias, Matosinhos!
+              </h2>
+              <p class="text-aboutUs-Page" style="width: 80%; color: white">
+                Come surf with us in a mix of urban cityscape and nature. The
+                ocean breeze winds and the sound of the boardwalk buzzing around
+                us, it's a unique hub for surfers of all ages and experience
+                levels. We're focused on creating a safe and inclusive space for
+                everyone, while bringing the surfing community together. We are
+                as welcoming and warm as the Northern Portugal weather.
+              </p>
+              <p class="text-aboutUs-Page" style="color: white">
+                Don't be shy, come surf with us!
+              </p>
+              <a
+                target="_blank"
+                class="link-instagram link-instagram-container"
+                style="font-size: 20px; padding-top: 20px; color: white"
+                href="https://www.instagram.com/"
+                ><em>@surf_sway</em></a
+              >
+            </div>
+            <div
+              class="col-md-4 col-exist"
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="/images/MatosinhosBeach.png"
+                alt="Matosinhos Beach"
+                style="width: 110%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="album-beige">
+        <div class="container-ourVision" style="padding-bottom: 150px">
+          <h2 class="heading-secondary">Meet a shining part of our crew</h2>
+          <div class="container-fluid">
+            <!-- linha 1 -->
+            <div class="row row-crew" style="margin-top: 50px">
+              <!-- CARD 1 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/atalantabatista1.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Atalanta Batista</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/atalantabatista1/"
+                      ><em>@atalantabatista1</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 2 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/ayllar.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Ayllar Cinti</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/ayllar/"
+                      ><em>@ayllar</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 3 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/evelinneves.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Evelin Neves</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/evelinneves/"
+                      ><em>@evelinneves</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- linha 2 -->
+            <div class="row row-crew" style="margin-top: 50px">
+              <!-- CARD 1 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/ines.ambrosio.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Inês Ambrósio</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/ines.ambrosio/"
+                      ><em>@ines.ambrosio</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 2 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/jasmimavelino.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Jasmim Avelino</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/jasmimavelino/"
+                      ><em>@jasmimavelino</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 3 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/katerbrandi.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Kate Brandi</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/katerbrandi/"
+                      ><em>@katerbrandi</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- linha 3 -->
+            <div class="row row-crew" style="margin-top: 50px">
+              <!-- CARD 1 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/luana_soares001.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Luana Soares</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/luana_soares001/"
+                      ><em>@luana_soares001</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 2 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/carbonell.marina.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Mari Carbonell</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/carbonell.marina/"
+                      ><em>@carbonell.marina</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- CARD 3 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/juliiavianna.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Natasha Hermes</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/natashahermes/"
+                      ><em>@natashahermes</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- linha 4 -->
+            <div class="row row-crew" style="margin-top: 50px">
+              <!-- CARD 2 -->
+              <div class="col-md-4 col-card-crew">
+                <div class="card-crew">
+                  <img
+                    class="round-img img-fluid"
+                    style="border-radius: 300px"
+                    src="/images/sammanhaes.png"
+                    alt="Rounded image of a woman surfing"
+                  />
+                  <div class="volunteer-text-box">
+                    <h3 class="heading-tertiary">Samantha Manhaes</h3>
+                    <a
+                      target="_blank"
+                      class="link-instagram link-instagram-container"
+                      href="https://www.instagram.com/sammanhaes/"
+                      ><em>@sammanhaes</em></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="video-gallery">
+        <div class="album-blue community">
+          <div class="container-ourVision" style="padding-bottom: 150px">
+            <h2 class="heading-secondary">Surfing "Fun" Queens</h2>
+
+            <div class="videos" style="padding-top: 50px">
+              <iframe
+                class="player-group"
+                src="https://www.youtube.com/embed/FIyO4n3vjYQ?si=s7XoffIiDZi-2iwM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                class="player-group"
+                src="https://www.youtube.com/embed/WSNVMLlsBVE?si=HW1IvjO1y4FqZ0h2"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                class="player-group"
+                src="https://www.youtube.com/embed/Mr3M6J-X5qw?si=9Kq-yki4vMQoSho2"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                class="player-group"
+                src="https://www.youtube.com/embed/XYGz7djO1Xo?si=WR5kZ6FT5kMvt2ZI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                class="player-group"
+                src="https://www.youtube.com/embed/EbSwbXlaTLs?si=x0tZA9y_dpjTg78I"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                class="player-group"
+                src="https://www.youtube.com/embed/z-RNVraWVQQ?si=CttU9_LJrAiknc3H"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photo-gallery">
+        <div
+          class="album-beige"
+          style="padding-top: 100px; padding-bottom: 100px"
+        >
+          <div class="row row row-crew justify-content-center">
+            <!-- coluna 1  -->
+            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+              <img
+                src="/images/Grid-photo 1x1.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Girls having fun surfing together"
+              />
+              <img
+                src="/images/Grid-photo 1x2.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Girls having fun surfing together"
+              />
+            </div>
+            <!-- coluna 2  -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+              <img
+                src="/images/Grid-photo 2x1.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Girls having fun surfing together"
+              />
+              <img
+                src="/images/Grid-photo 2x2.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Girls having fun surfing together"
+              />
+            </div>
+            <!-- coluna 3  -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+              <img
+                src="/images/Grid-photo 3x1.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Girls having fun surfing together"
+              />
+              <img
+                src="/images/Grid-photo 3x2.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Girls having fun surfing together"
+              />
+            </div>
+            <!-- coluna 4  -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+              <img
+                src="/images/Grid-photo 4x1.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Girls having fun surfing together"
+              />
+              <img
+                src="/images/Grid-photo 4x2.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Girls having fun surfing together"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="row-newsletter">
+          <div class="content-newsletter">
+            <h2 class="heading-secondary insta">Follow the Swell</h2>
+            <p class="newsletter-text">
+              Sign up with your email address to receive all our latest
+              information and to stay up.
+            </p>
+          </div>
+          <form class="form-inline" method="post">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <a class="btn btn--full" type="submit" href="#">Subscribe</a>
+            </div>
+          </form>
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+      <div class="album-beige container-cards-contact">
+        <!-- CARDS -->
+        <div class="row row-card-contact">
+          <!-- CARD 1 Volunteer -->
+          <div class="col-sm-6">
+            <div class="card-contact">
+              <img
+                class="round-img img-fluid"
+                src="/images/roundImg_Volunteer.png"
+                alt="Two girls holding your hands and surfing the same board"
+              />
+              <div class="volunteer-text-box">
+                <h3 class="heading-tertiary">Become a Volunteer</h3>
+                <p class="img-description">
+                  If you're passionate about bringing surf into the lives of
+                  others, we'd love to have you as a volunteer.
+                </p>
+              </div>
+              <a class="btn btn--full" type="submit" href="error.html"
+                >Apply Here</a
+              >
+            </div>
+          </div>
+          <!-- CARD 2 Partner -->
+          <div class="col-sm-6">
+            <div class="card-contact">
+              <img
+                class="round-img img-fluid"
+                src="/images/roundImg_Partner.png"
+                alt="Female surfer being photographed"
+              />
+              <div class="volunteer-text-box">
+                <h3 class="heading-tertiary">Partner With Us</h3>
+                <p class="img-description">
+                  If you're curious about our business, partnerships, or other
+                  marketing opportunities, this is the place for you.
+                </p>
+              </div>
+              <a class="btn btn--full" type="submit" href="error.html">
+                Email Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li>
+            <a target="_blank" class="icon" href="https://www.instagram.com/"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="icon" href="https://www.facebook.com/"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="icon" href="https://www.youtube.com/"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <ul class="footer-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="community.html">COMMUNITY</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <hr />
+        <p class="copyright">
+          <span>&copy</span>2023 Natana Oliveira | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

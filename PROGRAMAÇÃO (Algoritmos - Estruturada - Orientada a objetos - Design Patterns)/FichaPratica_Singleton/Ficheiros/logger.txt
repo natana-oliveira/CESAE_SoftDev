@@ -1,0 +1,7 @@
+2023-12-11T22:42:29.661059: Inicio do Programa
+2023-12-11T22:42:29.676684100: x: 20
+2023-12-11T22:42:29.676684100: y: 15
+2023-12-11T22:42:29.676684100: Objeto “mercedes” da Classe Carro criado com sucesso
+2023-12-11T22:42:29.676684100: Objeto “ferrari” da Classe Carro criado com sucesso
+2023-12-11T22:42:29.676684100: Estou a tentar criar outro ficheiro de log...
+2023-12-11T22:42:29.676684100: w: 115

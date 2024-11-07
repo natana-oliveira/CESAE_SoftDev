@@ -1,0 +1,22 @@
+<h1>Lista de Cidades</h1>
+<div>
+  <!--button type="button" (click)="adicionarCidade()">
+    Adicionar Nova Cidade
+  </button><br /><br /-->
+  <!--button type="button" routerLink="/formulario-cidade-td">
+    Adicionar Nova Cidade (1: routerLink="")
+  </button><br /><br /-->
+  <button type="button" (click)="irAdicionarCidade()">
+    Adicionar Nova Cidade <!--(2: via objeto no TS)-->
+  </button><br /><br />
+  <button type="button" (click)="limparDados()">
+    Limpar dados
+  </button><br /><br />
+</div>
+<div>
+  <ul>
+    @for (cidade of cidades; track $index) {
+    <app-minha-lista-item [cidade]="cidade"></app-minha-lista-item>
+    }
+  </ul>
+</div>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/general.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <title>SurfSway</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                class="logo"
+                src="/images/logo_SurfSway_200px.png"
+                alt="Surf Sway logo"
+            /></a>
+            <!-- HAMBURGER BUTTON RESPONSIVE -->
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SIDEBAR -->
+            <div
+              class="sidebar offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <!-- SIDEBAR HEADER -->
+              <div class="offcanvas-header">
+                <a class="navbar-brand" href="index.html"
+                  ><img
+                    class="logo"
+                    src="/images/logo_SurfSway_200px.png"
+                    alt="Surf Sway logo"
+                /></a>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white shadow-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- SIDEBAR BODY -->
+              <div class="offcanvas-body d-flex flex-column p-4">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <!-- <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li> -->
+                  <li class="nav-item mx-4">
+                    <!-- mx-4 altera distancia "margin" entre os links -->
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="community.html">COMMUNITY</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="img-homepage">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              We all have a birthright to enjoy the sea!
+            </h1>
+            <p class="hero-description">
+              Bringing women together through our passion for surfing, we
+              promote diversity and inclusion in surf lineups across the oceans
+              and seas around the world.
+            </p>
+            <a class="btn btn--full" href="about.html">View More</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="album-beige about">
+        <div class="container-aboutUs">
+          <img class="img-base" src="/images/wave about.png" />
+          <img
+            class="img-square"
+            src="/images/aboutUs.png"
+            alt="Group of girls holding boards"
+          />
+          <p class="text-aboutUs">
+            We are a female surf collective unifying women globally by
+            cultivating authentic community. We envision a world where our
+            lineups will reflect the diversity we see in the world.
+          </p>
+        </div>
+      </div>
+
+      <section>
+        <div class="album-blue community">
+          <div class="container-community">
+            <div class="text">
+              <p class="text-community">
+                We’re focused on creating a safe and inclusive space for all
+                people, while bringing together community in longboarding surf.
+              </p>
+              <a class="link-white" href="community.html">
+                Our Community <i class="bi bi-suit-heart-fill"></i
+              ></a>
+            </div>
+            <iframe
+              class="player"
+              src="https://www.youtube.com/embed/dQEXtmldx6I?si=KHL-EJU6DjfCK8en"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="album-beige" style="padding-bottom: 50px">
+          <div class="pt-5 pb-5">
+            <h2
+              class="heading-secondary instagram"
+              style="margin-top: 80px; text-align: center"
+            >
+              Our News
+            </h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper" style="margin-bottom: 50px">
+                <!-- CARD 1 -->
+                <div class="swiper-slide">
+                  <div class="card blog-card">
+                    <a href="error.html" style="text-decoration: none">
+                      <img
+                        class="img-fluid card-img-top"
+                        alt="100%x280"
+                        src="/images/News 1 1.jpg"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Overcoming imposter syndrome in the surf
+                        </h4>
+                        <p class="card-text blog-homepage">by Emma Bukowski</p>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="swiper-slide">
+                  <div class="card blog-card">
+                    <a href="error.html" style="text-decoration: none">
+                      <img
+                        class="img-fluid card-img-top"
+                        alt="100%x280"
+                        src="/images/News 2 2.jpg"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Wave Woman</h4>
+                        <p class="card-text blog-homepage">by Kim Feldmann</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- CARD 3 -->
+                <div class="swiper-slide">
+                  <div class="card blog-card">
+                    <a href="error.html" style="text-decoration: none"
+                      ><img
+                        class="img-fluid card-img-top"
+                        alt="100%x280"
+                        src="/images/News 3.jpg"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Paddle, Paddle, Paddle!</h4>
+                        <p class="card-text blog-homepage">by Kim Feldmann</p>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <!-- CARD 4 -->
+                <div class="swiper-slide">
+                  <div class="card blog-card">
+                    <a href="error.html" style="text-decoration: none">
+                      <img
+                        class="img-fluid card-img-top"
+                        alt="100%x280"
+                        src="/images/News 4.webp"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">She shapes</h4>
+                        <p class="card-text blog-homepage">by Mike Bresen</p>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <!-- CARD 5 -->
+                <div class="swiper-slide">
+                  <div class="card blog-card">
+                    <a href="error.html" style="text-decoration: none"
+                      ><img
+                        class="img-fluid card-img-top"
+                        alt="100%x280"
+                        src="/images/News 5.jpg"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          The buoyant surf photography of Ana Catarina
+                        </h4>
+                        <p class="card-text blog-homepage">by Kim Feldmann</p>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <!-- CARD 6 -->
+                <div class="swiper-slide">
+                  <div class="card blog-card">
+                    <a href="error.html" style="text-decoration: none"
+                      ><img
+                        class="img-fluid card-img-top"
+                        alt="100%x280"
+                        src="/images/News 6.jpg"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">First steps</h4>
+                        <p class="card-text blog-homepage">by Kim Feldmann</p>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <!-- CARD 7 -->
+                <div class="swiper-slide">
+                  <div class="card blog-card">
+                    <a href="error.html" style="text-decoration: none"
+                      ><img
+                        class="img-fluid card-img-top"
+                        alt="100%x280"
+                        src="/images/News 7.png"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Creating safe spaces for women to enjoy the ocean and
+                          surfing
+                        </h4>
+                        <p class="card-text blog-homepage">
+                          by Amanda Prifti, Lara Coldwood, Lizzie Goldsack
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              freeMode: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+          </script>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+              });
+
+              // Verifica se a tela é pequena e ajusta o número de slides
+              function updateSlides() {
+                if (window.innerWidth <= 767) {
+                  swiper.params.slidesPerView = 1;
+                } else {
+                  swiper.params.slidesPerView = "auto";
+                }
+                swiper.update(); // Atualiza o Swiper com as novas configurações
+              }
+
+              // Atualiza os slides quando a janela for redimensionada
+              window.addEventListener("resize", updateSlides);
+
+              // Chama a função inicialmente para configurar corretamente
+              updateSlides();
+            });
+          </script>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="row-newsletter">
+          <div class="content-newsletter">
+            <h2 class="heading-secondary insta">Follow the Swell</h2>
+            <p class="newsletter-text">
+              Sign up with your email address to receive all our latest
+              information and to stay up.
+            </p>
+          </div>
+          <form class="form-inline" method="post">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <a class="btn btn--full" type="submit" href="#">Subscribe</a>
+            </div>
+          </form>
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+      <!-- INSTAGRAM -->
+      <section class="instagram">
+        <div class="album-beige instagram">
+          <div class="instagram-container">
+            <h2 class="heading-secondary instagram">Keep Stocked With Us</h2>
+            <a
+              target="_blank"
+              class="link-instagram link-instagram-container"
+              href="https://www.instagram.com/"
+              ><em>@surf_sway</em></a
+            >
+
+            <div class="row-instagram">
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  class="instagram-photo"
+                  src="/images/instagram1.jpg"
+                  alt="Instagram photo"
+              /></a>
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  class="instagram-photo"
+                  src="/images/instagram2.jpg"
+                  alt="Instagram photo"
+              /></a>
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  class="instagram-photo"
+                  src="/images/instagram3.jpg"
+                  alt="Instagram photo"
+              /></a>
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  class="instagram-photo"
+                  src="/images/instagram4.png"
+                  alt="Instagram photo"
+              /></a>
+            </div>
+            <div class="row-instagram">
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  class="instagram-photo"
+                  src="/images/instagram5.jpg"
+                  alt="Instagram photo"
+              /></a>
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  class="instagram-photo"
+                  src="/images/instagram6.jpeg"
+                  alt="Instagram photo"
+              /></a>
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  class="instagram-photo"
+                  src="/images/instagram7.jpg"
+                  alt="Instagram photo"
+              /></a>
+              <a target="_blank" href="https://www.instagram.com/"
+                ><img
+                  class="instagram-photo"
+                  src="/images/instagram8.jpg"
+                  alt="Instagram photo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li>
+            <a target="_blank" class="icon" href="https://www.instagram.com/"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="icon" href="https://www.facebook.com/"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" class="icon" href="https://www.youtube.com/"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <ul class="footer-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="community.html">COMMUNITY</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <hr />
+        <p class="copyright">
+          <span>&copy</span>2023 Natana Oliveira | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!-- NAVBAR -->
+<nav
+  class="navbar navbar-expand-lg bg-transparent"
+  style="background-color: white"
+>
+  <div class="container-fluid">
+    <a href="#"><img src="assets/log.png" alt="" style="width: 10%" /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#">Home</a>
+       </li> -->
+        <li
+          class="nav-item"
+          style="padding-right: 65px; font-weight: 600; font-size: 22px"
+        >
+          <a class="nav-link" style="color: #df4f2a" href="#">Animais</a>
+        </li>
+        <li
+          class="nav-item"
+          style="padding-right: 65px; font-weight: 600; font-size: 22px"
+        >
+          <a class="nav-link" style="color: #df4f2a" href="#">Tutores</a>
+        </li>
+        <li
+          class="nav-item"
+          style="padding-right: 65px; font-weight: 600; font-size: 22px"
+        >
+          <a class="nav-link" style="color: #df4f2a" href="#">Marcações</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-success"
+          type="submit"
+          style="background-color: #df4f2a; border: none"
+        >
+          <i class="bi bi-search" style="color: white; font-size: 20px"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container" style="margin-top: 50px">
+  <br />
+  <h2 style="color: #df4f2a">Inserir novo animal</h2>
+
+  <form [formGroup]="formularioAnimal" (ngSubmit)="handleSubmit()">
+    <div>
+      <label for="nome" class="form-label" style="padding-top: 15px"
+        >Nome:</label
+      >
+      <input
+        class="form-control"
+        formControlName="nome"
+        type="text"
+        id="nome"
+      />
+      @if ((submitted || formularioAnimal.controls['nome'].touched) &&
+      formularioAnimal.controls['nome'].errors) {
+      <div>
+        @if (formularioAnimal.controls['nome'].errors['required']) {
+        <span>O nome é obrigatório</span>
+        }
+      </div>
+      }
+    </div>
+
+    <div class="row">
+      <div style="width: 50%">
+        <label for="especie" class="form-label" style="padding-top: 15px"
+          >Especie:</label
+        >
+        <input
+          class="form-control"
+          formControlName="especie"
+          type="text"
+          id="especie"
+        />
+        @if ((submitted || formularioAnimal.controls['especie'].touched) &&
+        formularioAnimal.controls['especie'].errors) {
+        <div>
+          @if (formularioAnimal.controls['especie'].errors['required']) {
+          <span>A especie é obrigatório</span>
+          }
+        </div>
+        }
+      </div>
+      <div style="width: 50%">
+        <label for="raca" class="form-label" style="padding-top: 15px"
+          >Raça:</label
+        >
+        <input
+          class="form-control"
+          formControlName="raca"
+          type="text"
+          id="raca"
+        />
+        @if ((submitted || formularioAnimal.controls['raca'].touched) &&
+        formularioAnimal.controls['raca'].errors) {
+        <div>
+          @if (formularioAnimal.controls['raca'].errors['required']) {
+          <span>A raça é obrigatória</span>
+          }
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="row">
+      <div style="width: 50%">
+        <label for="sexo" class="form-label" style="padding-top: 15px"
+          >Sexo:</label
+        >
+        <input
+          class="form-control"
+          formControlName="sexo"
+          type="text"
+          id="sexo"
+        />
+        @if ((submitted || formularioAnimal.controls['sexo'].touched) &&
+        formularioAnimal.controls['sexo'].errors) {
+        <div>
+          @if (formularioAnimal.controls['sexo'].errors['required']) {
+          <span>A raça é obrigatória</span>
+          }
+        </div>
+        }
+      </div>
+      <div style="width: 50%">
+        <label for="tutorId" class="form-label" style="padding-top: 15px"
+          >ID do Tutor:</label
+        >
+        <input
+          class="form-control"
+          formControlName="tutorId"
+          type="text"
+          id="tutorId"
+        />
+        @if ((submitted || formularioAnimal.controls['tutorId'].touched) &&
+        formularioAnimal.controls['tutorId'].errors) {
+        <div>
+          @if (formularioAnimal.controls['tutorId'].errors['required']) {
+          <span>O ID do Tutor é obrigatório</span>
+          }
+        </div>
+        }
+      </div>
+    </div>
+
+    <div>
+      <label for="dataNascimento" class="form-label" style="padding-top: 15px"
+        >Data de Nascimento:</label
+      >
+      <input
+        class="form-control"
+        formControlName="dataNascimento"
+        type="datetime-local"
+        id="dataNascimento"
+      />
+      @if ((submitted || formularioAnimal.controls['dataNascimento'].touched) &&
+      formularioAnimal.controls['dataNascimento'].errors) {
+      <div>
+        @if (formularioAnimal.controls['dataNascimento'].errors['required']) {
+        <span>A Data e Hora é obrigatório</span>
+        }
+      </div>
+      }
+    </div>
+
+    <button
+      type="submit"
+      [disabled]="submitted && formularioAnimal.invalid"
+      style="
+        background-color: #df4f2a;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 15px;
+      "
+    >
+      Criar animal
+    </button>
+  </form>
+</div>

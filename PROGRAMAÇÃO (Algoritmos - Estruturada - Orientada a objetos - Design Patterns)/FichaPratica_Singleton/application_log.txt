@@ -1,0 +1,5 @@
+Log 1: Variável x definida para 20
+Log 2: Objeto “porsche” da Classe Car criado com sucesso
+Log 3: Objeto “mercedes” da Classe Car criado com sucesso
+Log 4: Método corrida invocado entre porsche e mercedes 
+Log 5: Vencedor da corrida é porsche

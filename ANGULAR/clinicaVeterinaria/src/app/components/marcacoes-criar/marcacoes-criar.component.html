@@ -1,0 +1,163 @@
+<!-- NAVBAR -->
+<nav
+  class="navbar navbar-expand-lg bg-transparent"
+  style="background-color: white"
+>
+  <div class="container-fluid">
+    <a href="#"><img src="assets/log.png" alt="" style="width: 10%" /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#">Home</a>
+       </li> -->
+        <li
+          class="nav-item"
+          style="padding-right: 65px; font-weight: 600; font-size: 22px"
+        >
+          <a class="nav-link" style="color: #df4f2a" href="#">Animais</a>
+        </li>
+        <li
+          class="nav-item"
+          style="padding-right: 65px; font-weight: 600; font-size: 22px"
+        >
+          <a class="nav-link" style="color: #df4f2a" href="#">Tutores</a>
+        </li>
+        <li
+          class="nav-item"
+          style="padding-right: 65px; font-weight: 600; font-size: 22px"
+        >
+          <a class="nav-link" style="color: #df4f2a" href="#">Marcações</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-success"
+          type="submit"
+          style="background-color: #df4f2a; border: none"
+        >
+          <i class="bi bi-search" style="color: white; font-size: 20px"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container" style="margin-top: 50px">
+  <br />
+  <h2 style="color: #df4f2a">Nova marcação</h2>
+
+  <form [formGroup]="formularioMarcacao" (ngSubmit)="handleSubmit()">
+    <div>
+      <label class="form-label" for="tipo" style="padding-top: 30px"
+        >Tipo:</label
+      >
+      <input
+        class="form-control"
+        formControlName="tipo"
+        type="text"
+        id="tipo"
+      />
+      @if ((submitted || formularioMarcacao.controls['tipo'].touched) &&
+      formularioMarcacao.controls['tipo'].errors) {
+      <div>
+        @if (formularioMarcacao.controls['tipo'].errors['required']) {
+        <span>O Tipo é obrigatório</span>
+        }
+      </div>
+      }
+    </div>
+    <div>
+      <label class="form-label" for="animalId" style="padding-top: 15px"
+        >ID do Animal:</label
+      >
+      <input
+        class="form-control"
+        formControlName="animalId"
+        type="text"
+        id="animalId"
+      />
+      @if ((submitted || formularioMarcacao.controls['animalId'].touched) &&
+      formularioMarcacao.controls['animalId'].errors) {
+      <div>
+        @if (formularioMarcacao.controls['animalId'].errors['required']) {
+        <span>O ID do Animal é obrigatório</span>
+        }
+      </div>
+      }
+    </div>
+
+    <div class="row"></div>
+
+    <div>
+      <label class="form-label" for="tutorId" style="padding-top: 15px"
+        >ID do Tutor:</label
+      >
+      <input
+        class="form-control"
+        formControlName="tutorId"
+        type="text"
+        id="tutorId"
+      />
+      @if ((submitted || formularioMarcacao.controls['tutorId'].touched) &&
+      formularioMarcacao.controls['tutorId'].errors) {
+      <div>
+        @if (formularioMarcacao.controls['tutorId'].errors['required']) {
+        <span>O ID do Tutor é obrigatório</span>
+        }
+      </div>
+      }
+    </div>
+    <div>
+      <label
+        class="form-label"
+        for="dataHora"
+        style="padding-top: 15px; padding-bottom: 15px"
+        >Data e Hora:</label
+      >
+      <input
+        class="form-control"
+        formControlName="dataHora"
+        type="datetime-local"
+        id="dataHora"
+      />
+      @if ((submitted || formularioMarcacao.controls['dataHora'].touched) &&
+      formularioMarcacao.controls['dataHora'].errors) {
+      <div>
+        @if (formularioMarcacao.controls['dataHora'].errors['required']) {
+        <span>A Data e Hora é obrigatório</span>
+        }
+      </div>
+      }
+    </div>
+    <br />
+    <button
+      style="
+        background-color: #df4f2a;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+      "
+      type="submit"
+      [disabled]="submitted && formularioMarcacao.invalid"
+    >
+      Criar marcação
+    </button>
+  </form>
+</div>

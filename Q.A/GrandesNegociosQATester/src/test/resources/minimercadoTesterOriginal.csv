@@ -1,0 +1,18 @@
+tipo_produto,produto,quantidade_vendida,preco_unitario
+Alimentacao,Bacalhau,20,15.99
+Alimentacao,Queijo Serra,10,9.50
+Alimentacao,Azeite,30,7.99
+Alimentacao,Cerveja Super Bock,445,0.99
+Alimentacao,Tremoços,100,0.99
+Higiene,Sabao Azul e Branco,50,1.75
+Higiene,Sabao Rosa,55,1.70
+Higiene,Amaciador da Roupa,40,4.99
+Higiene,Pasta de Dentes,60,3.50
+Higiene,Shampoo Homem 8 em 1,35,6.99
+Produtos para Casa,Toalhas de Papel,70,2.25
+Produtos para Casa,Lava-Louca,25,3.99
+Produtos para Casa,Sacos do Lixo,100,4.50
+Produtos para Casa,Vassoura,20,7.99
+Produtos para Casa,Ambientador de Francesinha,10,9.95
+Higiene,Sabao Rosa,5,1.70
+Higiene,Sabao Rosa,20,1.70

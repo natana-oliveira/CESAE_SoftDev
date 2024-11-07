@@ -1,0 +1,42 @@
+tipo;nome;custo;estatuto;lotacaoMax;marca;modelo;formal
+Imovel;Malfoy Manor;1550000;700;35;0;0;0
+Imovel;House of Black - 12 Grimmauld Place;880000;500;15;0;0;0
+Imovel;Snape's house;195000;200;3;0;0;0
+Imovel;93 Diagon Alley;400000;300;30;0;0;0
+Imovel;Shell Cottage;68500;120;8;0;0;0
+Imovel;Flamel House;57500;180;1;0;0;0
+Imovel;The Burrow;25500;70;9;0;0;0
+Imovel;Dursleys' Home - No 4, Privet Drive;45500;20;3;0;0;0
+Imovel;Hagrid's Hut;200;50;1;0;0;0
+Imovel;Potter Cottage;65500;250;4;0;0;0
+Imovel;Lovegood House;70000;150;4;0;0;0
+Imovel;Remus Lupin's Cottage;55000;110;6;0;0;0
+Imovel;Lestrange Manor;980000;450;20;0;0;0
+Imovel;Shrieking Shack;1000;0;7;0;0;0
+Veiculo;Nimbus;800;130;0;Randolph Spudmore;2000;0
+Veiculo;Silver Arrow;550;100;0;Leonard Jewkes;91;0
+Veiculo;Firebolt;1000;150;0;Nimbus Racing Company;Supreme;0
+Veiculo;Knight Bus;95000;100;0;Alexander Dennis Limited;Enviro500;0
+Veiculo;Muggle Car;6900;80;0;Ford;Anglia;0
+Veiculo;Luggage Trolley;120;30;0;King's Cross Station;Standart;0
+Veiculo;Hogwarts Carriages;80000;360;0;Hogwarts School of Witchcraft and Wizardry;Unknow;0
+Veiculo;Beauxbatons Carriage;100000;430;0;Beauxbatons Academy of Magic;Magical transportation;0
+Veiculo;Victor Gridley's caravan;50000;395;0;Unknow;Unknow;0
+Veiculo;Hogwarts Boats;9500;350;0;Hogwarts School of Witchcraft and Wizardry;Unknow;0
+Veiculo;Gellert Grindelwald's car;400000;500;0;Mercedes-Benz;W 150 Convertible;0
+Veiculo;Hagrid's Motorbike ;9900;120;0;Triumph;Bonneville T120;0
+AcessorioModa;Marvolo Gaunt's Ring;1800;180;0;Horcrux;0;true
+AcessorioModa;Slytherin's Locket;2000;200;0;Horcrux;0;true
+AcessorioModa;Ravenclaw's Diadem;3000;250;0;Horcrux;0;true
+AcessorioModa;Cloak of Invisibility;5000;500;0;Deathly Hallows;0;false
+AcessorioModa;Time-Turner Necklace;60;30;0;McGonagall's collection;0;false
+AcessorioModa;Gryffindor Scarf;25;12;0;Hogwarts School of Witchcraft and Wizardry;0;false
+AcessorioModa;Luna Lovegood Spectrespecs Glasses;13;2;0;Luna's Creation;0;false
+AcessorioModa;Sorting Hat;80;18;0;Hogwarts;0;false
+AcessorioModa;Dobby's socks;5;4;0;Malfoy's Collection;0;false
+AcessorioModa;Slytherin Necktie;15;8;0;Hogwarts School of Witchcraft and Wizardry;0;true
+AcessorioModa;Number 7 Shirt - Quidditch Uniform;45;40;0;Hogwarts School of Witchcraft and Wizardry;0;false
+AcessorioModa;Hagrid's pink umbrella;3;2;0;Hogwarts School of Witchcraft and Wizardry;0;false
+AcessorioModa;Granger's beaded handbag;12;22;0;Dumbledore's collection;0;false
+AcessorioModa;Luna Lovegood's lion-topped hat;15;7;0;Luna's Creation;0;false
+AcessorioModa;Hermione's Yule Ball dress;75;80;0;Gladrags Wizardwear;0;true

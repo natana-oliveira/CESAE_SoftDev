@@ -1,0 +1,125 @@
+{
+  "cidades": [
+    {
+      "id": "1",
+      "nome": "Porto",
+      "pais": "Portugal",
+      "populacao": 78450
+    },
+    {
+      "id": "2",
+      "nome": "Aveiro",
+      "pais": "Portugal",
+      "populacao": 181494
+    },
+    {
+      "id": "3",
+      "nome": "Barcelona",
+      "pais": "Espanha",
+      "populacao": 1620343
+    },
+    {
+      "id": "4",
+      "nome": "Paris",
+      "pais": "França",
+      "populacao": 2148271
+    },
+    {
+      "id": "5",
+      "nome": "Berlim",
+      "pais": "Alemanha",
+      "populacao": 3645000
+    },
+    {
+      "id": 0,
+      "nome": "Porto",
+      "pais": "Portugal",
+      "populacao": 78450
+    },
+    {
+      "id": 0,
+      "nome": "Aveiro",
+      "pais": "Portugal",
+      "populacao": 181494
+    },
+    {
+      "id": 0,
+      "nome": "Barcelona",
+      "pais": "Espanha",
+      "populacao": 1620343
+    },
+    {
+      "id": 0,
+      "nome": "Paris",
+      "pais": "França",
+      "populacao": 2148271
+    },
+    {
+      "id": 0,
+      "nome": "Berlim",
+      "pais": "Alemanha",
+      "populacao": 3645000
+    },
+    {
+      "id": 0,
+      "nome": "Porto",
+      "pais": "Portugal",
+      "populacao": 78450
+    },
+    {
+      "id": 0,
+      "nome": "Paris",
+      "pais": "França",
+      "populacao": 2148271
+    },
+    {
+      "id": 0,
+      "nome": "Berlim",
+      "pais": "Alemanha",
+      "populacao": 3645000
+    },
+    {
+      "id": 0,
+      "nome": "Aveiro",
+      "pais": "Portugal",
+      "populacao": 181494
+    },
+    {
+      "id": 0,
+      "nome": "Barcelona",
+      "pais": "Espanha",
+      "populacao": 1620343
+    },
+    {
+      "id": 0,
+      "nome": "Porto",
+      "pais": "Portugal",
+      "populacao": 78450
+    },
+    {
+      "id": 0,
+      "nome": "Paris",
+      "pais": "França",
+      "populacao": 2148271
+    },
+    {
+      "id": 0,
+      "nome": "Berlim",
+      "pais": "Alemanha",
+      "populacao": 3645000
+    },
+    {
+      "id": 0,
+      "nome": "Aveiro",
+      "pais": "Portugal",
+      "populacao": 181494
+    },
+    {
+      "id": 0,
+      "nome": "Barcelona",
+      "pais": "Espanha",
+      "populacao": 1620343
+    }
+  ],
+  "pais": []
+}

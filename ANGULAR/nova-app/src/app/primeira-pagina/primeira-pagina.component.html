@@ -1,0 +1,14 @@
+<h1>ola mundo!</h1>
+
+<app-meu-componente meu-nome="Paulo" />
+
+<app-meu-componente [meu-nome]="meuNomePai"></app-meu-componente>
+
+<app-meu-componente></app-meu-componente>
+
+<app-meu-componente (mudancaContador)="atualizar($event)" [meu-nome]="meuNomePai"></app-meu-componente>
+<div style="background-color: beige">
+  <p>Contador: {{ contadorPAI }}</p>
+</div>
+
+<button (click)="changeMeuNomePai()">Sou o Miguel</button>

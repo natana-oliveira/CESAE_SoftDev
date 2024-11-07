@@ -1,0 +1,106 @@
+Ex_4:
+
+a) 
+CREATE view Ex_a AS
+SELECT id_treinador, nome, idade
+from treinador
+where idade < 40;
+
+b) 
+CREATE view Ex_b AS
+SELECT t.nome, e.*
+from experiencia as e 
+join treinador as t
+on e.id_treinador = t.id_treinador
+where e.anos>10 OR e.id_escalao = 3;
+
+c)
+CREATE view Ex_c AS
+SELECT t.*
+FROM treinador as t
+WHERE idade BETWEEN 45 AND 53 
+ORDER by idade DESC;
+
+d)
+CREATE view Ex_d AS
+SELECT t.*
+FROM treinador as t
+WHERE nome LIKE 'a%';
+
+e)
+CREATE VIEW Ex_e AS
+SELECT COUNT(*) AS 'Total de Equipas'
+FROM equipa;
+
+f)
+CREATE VIEW Ex_f AS
+SELECT COUNT(*) AS 'Total de Treinadores', AVG(idade) AS 'Média de Idade'
+FROM treinador
+WHERE idade>40;
+
+g)
+CREATE VIEW Ex_g AS
+SELECT MAX(idade) AS 'Idade Treinador Mais Velho'
+FROM treinador
+
+g1)   - apresentar também o nome: 
+CREATE VIEW Ex_g1 AS
+SELECT t. nome, MAX(idade) AS 'Idade do Treinador Mais Velho'
+FROM treinador as t;
+
+
+h)
+CREATE VIEW Ex_h AS
+SELECT e.id_equipa
+FROM equipa as e
+JOIN bola as b
+ON e.id_equipa = b.id_equipa
+WHERE b.fabricante = 'Adidas';
+
+i)  
+CREATE VIEW Ex_i AS
+SELECT DISTINCT e.id_equipa
+FROM equipa AS e
+JOIN bola AS b
+ON e.id_equipa = b.id_equipa
+WHERE b.fabricante = 'Adidas';
+
+j) 
+CREATE VIEW Ex_j AS
+SELECT AVG(t.idade) AS 'Média de Idade treinadores de juvenis'
+FROM treinador as t
+JOIN experiencia as e
+ON t.id_treinador = e.id_treinador
+WHERE e.id_escalao = (SELECT id_escalao FROM escalao WHERE descricao = 'juvenis');
+
+k)
+CREATE VIEW Ex_k AS
+SELECT t.nome AS 'Nome Treinador', t.telefone AS 'Telefone Treinador', eq.nome AS 'Nome Equipa'
+FROM treinador AS t
+JOIN experiencia AS exp ON t.id_treinador = exp.id_treinador
+JOIN equipa AS eq ON exp.id_equipa = eq.id_equipa;
+
+l)
+CREATE VIEW Ex_l AS
+SELECT eq.*, t.nome AS 'Nome Treinador'
+FROM equipa as eq
+JOIN experiencia AS exp ON exp.id_equipa = eq.id_equipa
+JOIN treinador AS t ON t.id_treinador = exp.id_treinador
+WHERE eq.nome = 'Académico';
+
+m) 
+CREATE VIEW Ex_m AS
+SELECT t. nome, MAX(t.idade) AS 'Idade do Treinador Mais Velho do Académico'
+FROM treinador as t
+JOIN experiencia AS exp ON t.id_treinador = exp.id_treinador
+JOIN equipa AS eq ON exp.id_equipa = eq.id_equipa
+WHERE eq.nome = 'Académico';
+
+n)
+CREATE VIEW Ex_n AS
+SELECT t.nome AS 'Nome Treinador', SUM(exp.anos) AS 'Total de Anos de Experiência no Académico'
+FROM treinador AS t
+JOIN experiencia as exp ON t.id_treinador = exp.id_treinador
+JOIN equipa AS eq ON exp.id_equipa = eq.id_equipa
+WHERE t.nome = 'António' AND eq.nome = 'Académico';
+

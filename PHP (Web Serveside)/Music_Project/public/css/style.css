@@ -1,0 +1,257 @@
+/* 
+#7144D8
+#9C44D8 
+#2a2a2a
+#989898
+*/
+
+.navbar {
+    --bs-navbar-hover-color: #9625be;
+}
+
+.nav-link {
+    color: #7144d8;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 18px !important;
+}
+
+.nav-link:hover {
+    color: #9c44d8;
+}
+
+.btn-nav {
+    background-color: #7144d8;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.btn-nav:hover {
+    background-color: #9c44d8;
+}
+
+.btn-link {
+    color: #7144d8;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-link:hover {
+    color: #9c44d8;
+}
+
+.container {
+    font-family: "Inter", sans-serif;
+    color: #989898;
+    padding: 20px;
+}
+
+.section_title {
+    margin-top: 75px;
+    align-items: center;
+    display: flex;
+    height: 5.5rem;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.btn-search:hover {
+    background-color: #9c44d8;
+}
+
+.btn-outline-success {
+    --bs-btn-active-bg: #9625be;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    font-size: 52px;
+    font-weight: 600;
+    color: #7144d8;
+}
+
+.card-img-overlay:hover {
+    color: #ffffff;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.5);
+}
+
+.primary_title {
+    color: #7144d8;
+    font-size: 3.25rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 30px;
+}
+
+.secondary_title {
+    color: #7144d8;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.tertiary_title {
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.35;
+}
+
+.container-form {
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.row-form {
+    margin-bottom: 25px;
+}
+
+.form-control {
+    background-color: #2a2a2a;
+    border: none;
+    color: white;
+}
+
+.confirmation-button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-primary-purple {
+    align-items: center;
+    color: #ffffff;
+    background-color: #7144d8;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.0500000007);
+    font-size: 1rem;
+    padding: 8px 16px;
+    font-weight: 600;
+    justify-content: center;
+    border: none;
+    --bs-btn-active-bg: #9625be;
+    --bs-btn-active-color: #ffffff;
+}
+
+.btn-primary-purple:hover {
+    color: #ffffff;
+    background-color: #9c44d8;
+}
+
+.tabela {
+    --bs-table-bg: transparent;
+}
+
+.tabela th {
+    color: #9c44d8;
+}
+
+.tabela td {
+    color: #989898;
+}
+
+.forgot-pass a {
+    color: #7144d8;
+}
+
+.form-control:disabled {
+    background-color: #2a2a2a;
+}
+
+.icons-option i {
+    padding-right: 25px;
+    font-size: 25px;
+    color: #989898;
+}
+
+.icons-option i:hover {
+    color: #7144d8 !important;
+}
+
+.animation {
+    text-align: center;
+}
+
+.id-dashboard {
+    color: #707070;
+}
+
+.music {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music .bar {
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background: white;
+    animation: loader 1.5s ease-in-out infinite;
+}
+@keyframes loader {
+    0%,
+    100% {
+        height: 2px;
+    }
+    50% {
+        height: 70px;
+    }
+}
+.music .bar:nth-child(1) {
+    background: #b97fe0;
+    animation-delay: 1s;
+}
+.music .bar:nth-child(2) {
+    background: #9c44d8;
+    animation-delay: 0.8s;
+}
+.music .bar:nth-child(3) {
+    background: #9625be;
+    animation-delay: 0.6s;
+}
+.music .bar:nth-child(4) {
+    background: #7144d8;
+    animation-delay: 0.4s;
+}
+.music .bar:nth-child(5) {
+    background: #4d1ac6;
+    animation-delay: 0.2s;
+}
+.music .bar:nth-child(6) {
+    background: #4d1ac6;
+    animation-delay: 0.2s;
+}
+.music .bar:nth-child(7) {
+    background: #7144d8;
+    animation-delay: 0.4s;
+}
+.music .bar:nth-child(8) {
+    background: #9625be;
+    animation-delay: 0.6s;
+}
+.music .bar:nth-child(9) {
+    background: #9c44d8;
+    animation-delay: 0.8s;
+}
+.music .bar:nth-child(10) {
+    background: #b97fe0;
+    animation-delay: 1s;
+}

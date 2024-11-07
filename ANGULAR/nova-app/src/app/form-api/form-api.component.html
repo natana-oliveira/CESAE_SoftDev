@@ -1,0 +1,24 @@
+<p>form-api works!</p>
+
+<form [formGroup]="form" (ngSubmit)="formSubmit()">
+    <div>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" formControlName="nome">
+        <div>        </div>
+    </div>
+    <br>
+    <div>
+        <label for="pais">Pais</label>
+        <input type="text" name="pais" id="pais" formControlName="pais">
+    </div>
+    <br>
+    <div>
+        <label for="populacao">População</label>
+        <input type="text" name="populacao" id="populacao" formControlName="populacao">
+    </div>
+    <br>
+    <div>
+        <button type="submit" [disabled]="form.invalid">OK</button>
+    </div>
+
+</form>

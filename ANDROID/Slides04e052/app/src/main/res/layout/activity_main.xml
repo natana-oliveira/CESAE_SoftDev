@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--
+        TODO   * EXERCICIO:1
+
+           <EditText
+               android:id="@+id/edit_text_euros"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:hint="Insira o valor em Euros" />
+
+           <Button
+               android:id="@+id/button_converter"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="Converter" />
+
+           <TextView
+               android:id="@+id/text_valor_dolares"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:gravity="left"/>
+     -->
+
+    <!--
+        TODO   * EXERCICIO:2
+
+       <EditText
+           android:id="@+id/edit_text_euros"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="5dp"
+           android:layout_marginBottom="20sp"
+           android:gravity="center"
+           android:hint="Insira o valor em Euros" />
+
+    <Button
+           android:id="@+id/button_converter"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="50dp"
+           android:gravity="center"
+           android:text="Converter" />
+
+    <TextView
+        android:id="@+id/text_valor_dolares"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="80sp" />
+     -->
+
+    <!--
+         TODO   * EXERCICIO:3
+
+    <TextView
+        android:id="@+id/text_nome_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Conversor de Moedas"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edit_text_euros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20sp"
+        android:gravity="center"
+        android:hint="Insira o valor em Euros" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_conversor_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real" />
+
+        <Button
+            android:id="@+id/button_conversor_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp"
+            android:text="Dolar" />
+
+        <Button
+            android:id="@+id/button_conversor_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_valor_convertido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/text_devop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:text="Desenvolvido por: Natana Oliveira"
+        android:gravity="center"
+        android:textSize="15sp" />
+     -->
+
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Bem-vindo"
+        android:textColor="#2196F3"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/text_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Preencha o seu username e password para continuar"
+        android:textColor="#808080"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/text_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:gravity="center"
+        android:minWidth="200dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/text_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:gravity="center" />
+
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:gravity="center" />
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Entrar" />
+
+
+</LinearLayout>
